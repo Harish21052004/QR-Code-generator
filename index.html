@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v6.4.0/css/all.css">
+    <link rel="shortcut icon" href="download.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="top">
+                <p>QR Code Generator</p>
+                <div class="input-field" onclick="hideImage()">
+                    <input type="text" placeholder="Paste or enter url" id="input-value">
+                    <i class="fa-solid fa-link"></i>
+                </div>
+            </div>
+            <div class="image-block" id="image-block">
+                <div class="image">
+                    <div class="border">
+                        <img src="" id="qr-img">
+                    </div>                    
+                </div>       
+            </div>
+            <div class="generate-btn" onclick="showImage()">
+                Generate
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
